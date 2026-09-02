@@ -39,8 +39,8 @@ In this challenge, we will make the BMI Calculator even more comprehensive and p
 
 - Unit tests can be added for ``calculateBmi``, ``classifyBmi``, and ``Person.validate`` using ``flutter_test``.
 - Example test targets:
-    - Valid BMI calculation for known inputs.
-    - Classification boundaries (16, 17, 18.5, 25, 30, 35, 40).
-    - Validation errors for zero/negative inputs and non-numeric strings.
+  - Valid BMI calculation for known inputs.
+  - Classification boundaries (16, 17, 18.5, 25, 30, 35, 40).
+  - Validation errors for zero/negative inputs and non-numeric strings.
 
 [LICENSE](/LICENSE)
