@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <h1 id="app-title">BMI Calculator</h1>
+
+      <div class="controls" role="group" aria-label="Settings">
+        <label for="lang" class="visually-hidden">Language</label>
+        <select id="lang" aria-label="Language selector">
+          <option value="en">English EN-US</option>
+          <option value="pt">Português PT-BR</option>
+          <option value="es">Español ES-ES</option>
+        </select>
+
+        <button id="theme-toggle" aria-pressed="true" aria-label="Toggle dark mode">
+          <span id="theme-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container" id="main" role="main">
+    <section class="card" aria-labelledby="form-title">
+      <h2 id="form-title">BMI Calculator</h2>
+
+      <form id="bmi-form" novalidate>
+        <div class="field">
+          <label for="name" id="label-name">Name</label>
+          <input id="name" name="name" type="text" inputmode="text" autocomplete="name" placeholder="Optional" />
+        </div>
+
+        <div class="field">
+          <label for="weight" id="label-weight">Weight (kg)</label>
+          <input id="weight" name="weight" type="text" inputmode="decimal" placeholder="e.g. 72.5" aria-describedby="weight-help" required />
+          <small id="weight-help" class="help">Use dot or comma for decimals</small>
+        </div>
+
+        <div class="field">
+          <label for="height" id="label-height">Height (m)</label>
+          <input id="height" name="height" type="text" inputmode="decimal" placeholder="e.g. 1.75" aria-describedby="height-help" required />
+          <small id="height-help" class="help">Use dot or comma for decimals</small>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="clear-btn" class="btn secondary">Clear</button>
+          <button type="submit" id="calc-btn" class="btn primary">Calculate BMI</button>
+        </div>
+      </form>
+
+      <div id="error" class="error" role="alert" aria-live="assertive"></div>
+    </section>
+
+    <section class="card results" aria-labelledby="results-title">
+      <h3 id="results-title">Results</h3>
+      <div class="results-meta">
+        <span id="count">0 saved</span>
+        <button id="clear-all" class="btn small" aria-label="Clear all results">Clear All</button>
+      </div>
+
+      <ul id="results-list" class="list" aria-live="polite"></ul>
+
+      <div class="info-block" aria-labelledby="classification-title">
+        <h4 id="classification-title">BMI Classification</h4>
+        <table>
+          <caption class="visually-hidden">BMI classification table</caption>
+          <thead>
+            <tr><th>IMC</th><th>Classification</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>&lt; 16</td><td>Severe Thinness</td></tr>
+            <tr><td>16 — &lt; 17</td><td>Moderate Thinness</td></tr>
+            <tr><td>17 — &lt; 18.5</td><td>Mild Thinness</td></tr>
+            <tr><td>18.5 — &lt; 25</td><td>Healthy</td></tr>
+            <tr><td>25 — &lt; 30</td><td>Overweight</td></tr>
+            <tr><td>30 — &lt; 35</td><td>Obesity Class I</td></tr>
+            <tr><td>35 — &lt; 40</td><td>Obesity Class II (Severe)</td></tr>
+            <tr><td>≥ 40</td><td>Obesity Class III (Morbid)</td></tr>
+          </tbody>
+        </table>
+        <p class="note">Formula: <strong>BMI = weight (kg) / height² (m)</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <small>Developed by Nivaldo Beirão</small>
+    </div>
+  </footer>
+
+  <script src="./src/script.js" defer></script>
+</body>
+</html>
