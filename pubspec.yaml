@@ -1,0 +1,8 @@
+name: bmi_calculator
+description: A simple BMI calculator in Dart.
+version: 0.0.1
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+
+dev_dependencies:
+  test: ^1.21.0
