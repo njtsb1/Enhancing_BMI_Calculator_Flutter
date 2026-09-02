@@ -17,13 +17,15 @@ In this challenge, we will make the BMI Calculator even more comprehensive and p
 
 1. Run:
 
-```bash
-flutter pub get
-flutter run
-```
+    ```bash
+    flutter pub get
+    flutter run
+    ```
 
 2. Use the form to enter weight (kg) and height (m), then tap **Calculate BMI**.
 3. Results appear in the list below the form. Swipe an item to delete it.
+
+![BMI Calculator](/docs/assets/BMI_Calculator.png)
 
 ## Notes for developers
 
