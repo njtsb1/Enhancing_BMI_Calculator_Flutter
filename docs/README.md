@@ -17,7 +17,7 @@ In this challenge, we will make the BMI Calculator even more comprehensive and p
 ## Tecnologies used
 
 - **Dart (Flutter)**: core language and framework to build the mobile app UI, manage state, handle input/validation, and run unit tests.
-- **AI (Assertive)**: provide intelligent input validation, contextual suggestions, and development assistance (code snippets, test generation, and UX guidance).
+- **AI (Assistive)**: provide intelligent input validation, contextual suggestions, and development assistance (code snippets, test generation, and UX guidance).
 
 ### Tecnologies add
 
